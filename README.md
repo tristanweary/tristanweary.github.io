@@ -1,2 +1,0 @@
-# tristanweary
- Tristan Weary Website 
