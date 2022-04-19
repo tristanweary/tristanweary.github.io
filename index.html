@@ -1,120 +1,367 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Tristan Weary Photography</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="styles.css">
+<DOCTYPE! html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-</head>
-<body class="w3-light-grey">
-
-
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">TRISTAN WEARY PHOTOGRAPHY // <a href="#test">LINK1<a/> <span> <span class=" "></span>
   
-  <!-- <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a> -->
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
-  
-  <!-- Photo grid -->
-  <div class="w3-row ">
-    <div class="w3-quarter">
-	<img src="img/lisa_highkey.jpg" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="img/jamie_8688.jpg" style="width:100%" onclick="onClick(this)" alt="">
-      
-      
-   </div>
-    
-   <div class="w3-quarter">
-      <img src="img/crimelight.jpg" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="img/pistil_0802.jpg" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="img/chadd_1534.jpg" style="width:100%" onclick="onClick(this)" alt="">
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="img/LLB_4164dess.jpg" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="img/DSC_9359.jpg" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="img/_LLB4958.jpg" style="width:100%" onclick="onClick(this)" alt="">
-    </div>
-
-    <div class="w3-quarter">
-      <img src="img/auxum.png" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="img/DSC_0604.jpg" style="width:100%" onclick="onClick(this)" alt="">
-      <img src="img/DSC_0744.jpg" style="width:100%" onclick="onClick(this)" alt="">
-	  <img src="img/_DSC5210.jpg" style="width:100%" onclick="onClick(this)" alt="">
-    </div>
+    <title>Tristan Weary Photography</title>
+    <meta charset="utf-8">
+	</head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet"> 
+    <style>
+	.shoot {
+color: red;
+}
 	
-	<div class="w3-quarter">
-	  
-	  
+
+	.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	box-shadow: 1px 1px 1px grey;
+	
+}
+	
+	.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 10px;
+	margin-bottom: 50vw;
+	
+}
+
+.header {
+	font-family: Raleway;
+	font-size: 150%;
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 20px;
+	outline-style: solid;
+	outline-color: color;
+	outline-width: thin;
+	box-shadow: 2px 2px 1px grey;
+	position: sticky;
+  top: 0;
+	}
+	
+
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+	margin: 0;
+}
+
+
+
+.item4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+	margin: 0;
+	
+	}
+	
+.item3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+	margin: 0;
+	
+	}
+	
+.item5 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+	margin: 0; 
+	}
+	
+	.item6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 9;
+	margin: 0; 
+	}
+	
+	.item7 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
+	margin: 0; 
+	}
+	
+	.item8 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+	margin: 0; 
+	}
+	
+	.item9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
+	margin: 0; 
+	}
+	
+	.item10 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 10;
+	margin: 0; 
+	}
+	
+	.item11 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+	margin: 0; 
+	}
+	
+	
+
+.shoot {
+font-weight: bold;
+color: red;
+}
+ 
+ 
+ /* modal */
+ 
+ /* Style the Image Used to Trigger the Modal */
+#myImg {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* Modal Lightbox */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Modal Zoom Effect */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.p {
+font-family: Raleway;
+}
+
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+	</style>
+	
+	<body>
+	
+	 <div class="header" >
+	TRISTAN WEARY PHOTOGRAPHY // PORTRAITS / <a href="#livemusic">LIVE MUSIC</a> / ABOUT / <strong><span class="shoot">SHOOT ME</span></strong>&nbsp/&nbsp<a href="tristanwearycv.html">CV</a>
 	</div>
-	
-  </div>
-
-  <!-- Pagination --> 
-  <div class="w3-center w3-padding-32">
-    <!-- <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a> --> 
-    </div>
-  </div>
-  <div id="test"></div>
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image" style="max-height:600px">
-      <p id="caption"></p>
-    </div>
-  </div>
-
+	<div class="container">
+  <figure class="gallery__img item1">
+     <img  id="1" src="img/lisa_highkey.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Lisa"> 
+  </figure>
   
-  </footer>
-  <span class="w3-center w3-padding"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0"
-  src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></span>
-  </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-  <div class="w3-white w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <figure class="gallery__img item3">
+     <img  id="2" src="img/LLB_4164dess.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Dess"> 
+  </figure>
+  
+  <figure class="gallery__img item4">
+     <img  id="4"	 src="img/jamie_8688.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Jamie"> 
+  </figure>
+  
+  <figure class="gallery__img item5">
+     <img id= "5" src="img/auxum.png" class="gallery__img" onClick="myFunc(this.id)"; alt="Auxum"> 
+  </figure>
+  
+  <figure class="gallery__img item6">
+     <img id="6" src="img/DSC_0604.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Steve (Body Farm)"> 
+  </figure>
+  
+  <figure class="gallery__img item7">
+     <img id="7" src="img/crimelight.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Crime Light"> 
+  </figure>
+  
+  <figure class="gallery__img item8">
+     <img id="8" src="img/DSC_9359.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Frayle"> 
+  </figure>
+  
+  <figure class="gallery__img item9">
+     <img id="9" src="img/DSC_0744.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Body Farm"> 
+  </figure>
+  
+  <figure class="gallery__img item10">
+     <img id="10" src="img/_DSC4982_COLLAGE3.png" class="gallery__img" onClick="myFunc(this.id)"; alt="Crime Light"> 
+  </figure>
+  
+  <figure class="gallery__img item11">
+     <img id="11" src="img/_LLB4958.jpg" class="gallery__img" onClick="myFunc(this.id)"; alt="Lilith"> 
+  </figure> 
+  
+  </div>
+  
+  <div id="livemusic">
+  <p>test<p>
+  
+ <!-- The Modal -->
+<div id="myModal" class="modal">
 
-<!-- End page content -->
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
 </div>
+  <script>
+  // Get the modal
+var modal = document.getElementById("myModal");
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+function myFunc(id){
+	
+  modal.style.display = "block";
+  modalImg.src = document.getElementById(id).src 
+  captionText.innerHTML = document.getElementById(id).alt;
 }
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} 
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+ function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
 </script>
 
 
-</body>
+  
+  
+ 
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
 </html>
