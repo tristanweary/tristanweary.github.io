@@ -66,7 +66,7 @@
 
   <header>
     <h1 class="ms-3">TRISTAN WEARY PHOTOGRAPHY</h1>
-  
+  <p class="px-4 pt-3 text-muted fst-italic" style="max-width: 600px;">music and portraiture photographer based in columbus, oh</p>
 <div class="gallery" id="gallery"></div>
 
   <!-- Modal -->
@@ -91,14 +91,13 @@
   const imagePaths = [
     'jamie_8688.jpg', '_DSC4982_COLLAGE2.jpg', 'lisa_highkey.jpg', 'crimelight.jpg', 'pistil_0802.jpg',
     'chadd_1534.jpg', 'LLB_4164dess.jpg', 'DSC_9359.jpg', '_LLB4958.jpg', 'auxum.png',
-    'DSC_0604.jpg', 'DSC_0744.jpg', '_DSC5210.jpg','_DSC3641.jpg','DSC_2231-Recovered_abigail.jpg','LLB_2679b.jpg','LLB_3985bw.jpb',
-    'DZM_1818.jpg','LLB_3834_crop_2.jpg','skull_collage1_high_saturation.jpg','DZM_2635(2).jpg','jules1.jpg','ken1.jpg'
+    'DSC_0604.jpg', 'DSC_0744.jpg', '_DSC5210.jpg'
   ];
   const shuffled = imagePaths.sort(() => Math.random() - 0.5);
   const gallery = document.getElementById('gallery');
   shuffled.forEach(name => {
     const img = document.createElement('img');
-    img.src = `img/${name}`;
+    img.src = `https://github.com/tristanweary/tristanwearyphoto.github.io/raw/main/img/${name}`;
     img.alt = '';
     img.setAttribute('data-bs-toggle', 'modal');
     img.setAttribute('data-bs-target', '#imageModal');
@@ -144,4 +143,3 @@
 
 </body>
 </html>
-
